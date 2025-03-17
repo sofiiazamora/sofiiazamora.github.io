@@ -2,7 +2,9 @@
 body {
     font-family: Arial, sans-serif !important;
     font-size: 16px;
-    margin: 20px;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
 }
 
 .titulo {
@@ -18,6 +20,12 @@ body {
     text-align: center;
 }
 
+.foto {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
 
 .subtitulo {
     font-family: 'Times New Roman', serif;
@@ -42,7 +50,7 @@ th {
 
 .avanzado { background-color: red; }
 .basico { background-color: fuchsia; }
-.ninguno { background-color: pink; }
+.no { background-color: pink; }
 
 #mensaje {
     margin-top: 20px;
