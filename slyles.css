@@ -26,4 +26,23 @@ th, td {
 
 th {
     font-family: 'Times New Roman', serif;
+    background-color: white;
+}
+
+.none {
+    background-color: pink;
+}
+
+.basic {
+    background-color: fuchsia;
+}
+
+.advanced {
+    background-color: red;
+}
+
+#mensaje {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
 }

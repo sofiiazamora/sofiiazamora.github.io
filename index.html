@@ -3,17 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página Personal</title>
+    <title>Página Personal - Lab 1</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Imagen del logo como archivo local -->
     <img src=imagen\images.png  class="foto">
     
     <h1>Sofía Zamora</h1>
-    <p>Carrera: Ingeniería Civil Industrial</p>
+    <p>Ingeniería Civil Industrial</p>
     <p>Año de ingreso: 2022</p>
-    <p>GitHub: <a href="https://github.com/sofiiazamora/sofiiazamora.github.io">github.com/sofiiazamora/sofiiazamora.github.io</a></p>
+    <p>GitHub: <a href="https://github.com/sofiiazamora/sofiiazamora.github.io">https://github.com/sofiiazamora/sofiiazamora.github.io</a></p>
     
     <h1>Resumen Personal</h1>
     <p>Estudiante de Ingeniería.</p>
@@ -26,40 +25,51 @@
         </tr>
         <tr>
             <td>Python</td>
-            <td>Avanzado</td>
+            <td class="advanced">Avanzado</td>
         </tr>
         <tr>
             <td>JavaScript</td>
-            <td>Básico</td>
+            <td class="basic">Básico</td>
         </tr>
         <tr>
             <td>HTML/CSS</td>
-            <td>Básico</td>
+            <td class="basic">Básico</td>
         </tr>
         <tr>
             <td>Git</td>
-            <td>Básico</td>
+            <td class="basic">Básico</td>
         </tr>
         <tr>
             <td>Excel</td>
-            <td>Básico</td>
+            <td class="basic">Básico</td>
         </tr>
         <tr>
             <td>SQL</td>
-            <td>Básico</td>
+            <td class="basic">Básico</td>
         </tr>
         <tr>
             <td>Ruby</td>
-            <td>No</td>
+            <td class="none">No</td>
         </tr>
         <tr>
             <td>Inglés</td>
-            <td>Experto</td>
+            <td class="advanced">Avanzado</td>
         </tr>
         <tr>
             <td>Español</td>
-            <td>Nativo</td>
+            <td class="advanced">Avanzado</td>
         </tr>
     </table>
+
+    <h1>Interactivo</h1>
+    <input type="text" id="texto">
+    <button onclick="CambiarMensaje()"></button>
+
+    <script>
+        function CambiarMensaje() {
+            var entrada = document.getElementbyId("texto").value;
+            document.getElementbyId("mensaje").innerHTML =entrada;
+        }
+    </script>
 </body>
 </html>
