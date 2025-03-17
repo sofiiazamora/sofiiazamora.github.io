@@ -30,15 +30,15 @@ th {
 }
 
 .none {
-    background-color: pink;
+    background-color: #ffc0cb;
 }
 
 .basic {
-    background-color: fuchsia;
+    background-color: #ff00ff;
 }
 
 .advanced {
-    background-color: red;
+    background-color: #ff0000;
 }
 
 #mensaje {
