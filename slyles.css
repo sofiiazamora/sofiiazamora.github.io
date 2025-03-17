@@ -1,57 +1,46 @@
 body {
-    font-family: 'Verdana', sans-serif;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
     margin: 20px;
 }
 
-.header {
-    font-family: 'Georgia', serif;
-}
-
 .foto {
-    max-width: 200px;
+    max-width: 100%;
     height: auto;
+    margin-bottom: 20px;
 }
 
-.skills-table {
+table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 15px;
+    border: 1px solid black;
 }
 
-.skills-table th, .skills-table td {
+th, td {
     padding: 8px;
     text-align: left;
-    border: 1px solid #ddd;
+    border: 1px solid black;
 }
 
-.avanzado {
-    background-color: #e74c3c;
-    color: white;
+th {
+    font-family: 'Times New Roman', serif;
+    background-color: #f2f2f2;
 }
 
-.basico {
-    background-color: #9b59b6;
-    color: white;
+.none {
+    background-color: #ffc0cb;
 }
 
-.no-experiencia {
-    background-color: #f7d3e9;
+.basic {
+    background-color: #ff00ff;
 }
 
-.nativo {
-    background-color: #27ae60;
-    color: white;
+.advanced {
+    background-color: #ff0000;
 }
 
-.mensaje-container {
-    margin-top: 15px;
+#mensaje {
+    margin-top: 20px;
     padding: 10px;
     border: 1px solid #ddd;
-    min-height: 20px;
-}
-
-.resumen {
-    background-color: #fff;
-    padding: 10px;
-    transition: background-color 0.3s;
 }
