@@ -7,71 +7,83 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <img src=imagen\images.png  class="foto">
+    <div class="header">
+        <img src="imagen/images.png" alt="Foto personal" class="foto">
+        <h1>Sofía Zamora</h1>
+        <p>Ingeniería Civil Industrial</p>
+        <p>Año de ingreso: 2022</p>
+        <p>GitHub: <a href="https://github.com/sofiiazamora/sofiiazamora.github.io">https://github.com/sofiiazamora/sofiiazamora.github.io</a></p>
+    </div>
     
-    <h1>Sofía Zamora</h1>
-    <p>Ingeniería Civil Industrial</p>
-    <p>Año de ingreso: 2022</p>
-    <p>GitHub: <a href="https://github.com/sofiiazamora/sofiiazamora.github.io">https://github.com/sofiiazamora/sofiiazamora.github.io</a></p>
+    <div class="resumen">
+        <h2>Resumen Personal</h2>
+        <p>Estudiante de Ingeniería Civil Industrial con interés en la optimización de procesos y análisis de datos.</p>
+    </div>
     
-    <h1>Resumen Personal</h1>
-    <p>Estudiante de Ingeniería.</p>
-    
-    <h1>Habilidades</h1>
-    <table border="1">
-        <tr>
-            <th>Habilidad</th>
-            <th>Nivel</th>
-        </tr>
-        <tr>
-            <td>Python</td>
-            <td style="background-color: red;">Avanzado</td>
-        </tr>
-        <tr>
-            <td>JavaScript</td>
-            <td style="background-color: fuchsia;">Básico</td>
-        </tr>
-        <tr>
-            <td>HTML/CSS</td>
-            <td style="background-color: fuchsia;">Básico</td>
-        </tr>
-        <tr>
-            <td>Git</td>
-            <td style="background-color: fuchsia;">Básico</td>
-        </tr>
-        <tr>
-            <td>Excel</td>
-            <td style="background-color: fuchsia;">Básico</td>
-        </tr>
-        <tr>
-            <td>SQL</td>
-            <td style="background-color: fuchsia;">Básico</td>
-        </tr>
-        <tr>
-            <td>Ruby</td>
-            <td style="background-color: pink;">No</td>
-        </tr>
-        <tr>
-            <td>Inglés</td>
-            <td style="background-color: red;">Avanzado</td>
-        </tr>
-        <tr>
-            <td>Español</td>
-            <td style="background-color: red;">Avanzado</td>
-        </tr>
-    </table>
+    <div>
+        <h2>Habilidades</h2>
+        <table class="skills-table">
+            <tr>
+                <th>Habilidad</th>
+                <th>Nivel</th>
+            </tr>
+            <tr>
+                <td>Python</td>
+                <td class="avanzado">Avanzado</td>
+            </tr>
+            <tr>
+                <td>JavaScript</td>
+                <td class="basico">Básico</td>
+            </tr>
+            <tr>
+                <td>HTML/CSS</td>
+                <td class="basico">Básico</td>
+            </tr>
+            <tr>
+                <td>Git</td>
+                <td class="basico">Básico</td>
+            </tr>
+            <tr>
+                <td>Excel</td>
+                <td class="basico">Básico</td>
+            </tr>
+            <tr>
+                <td>SQL</td>
+                <td class="basico">Básico</td>
+            </tr>
+            <tr>
+                <td>Ruby</td>
+                <td class="no-experiencia">No</td>
+            </tr>
+            <tr>
+                <td>Inglés</td>
+                <td class="avanzado">Avanzado</td>
+            </tr>
+            <tr>
+                <td>Español</td>
+                <td class="nativo">Nativo</td>
+            </tr>
+        </table>
+    </div>
 
-    <h1>Interactivo</h1>
-    <input type="text" id="texto">
-    <button id="botonMensaje">Enviar</button>
-    <div id="mensaje">Mensaje</div>
+    <div>
+        <h2>Interactivo</h2>
+        <input type="text" id="texto" placeholder="Escribe tu mensaje">
+        <button id="botonMensaje">Enviar</button>
+        <div id="mensaje" class="mensaje-container">Tu mensaje aparecerá aquí</div>
+    </div>
     
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            document.getElementById("botonMensaje").addEventListener("click", function() {
-                var entrada = document.getElementById("texto").value;
-                document.getElementById("mensaje").innerHTML = entrada;
-            });
+        document.getElementById("botonMensaje").addEventListener("click", function() {
+            var entrada = document.getElementById("texto").value;
+            document.getElementById("mensaje").innerHTML = entrada;
+            
+            // Cambiar el color de fondo de la sección de resumen
+            if (entrada !== "") {
+                document.querySelector(".resumen").style.backgroundColor = "#f8f4e3";
+            } else {
+                document.querySelector(".resumen").style.backgroundColor = "#ffffff";
+            }
         });
     </script>
 </body>

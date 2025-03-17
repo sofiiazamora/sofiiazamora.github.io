@@ -1,35 +1,57 @@
 body {
-    font-family: Arial, sans-serif;
-    font-size: 16px;
+    font-family: 'Verdana', sans-serif;
     margin: 20px;
 }
 
-.foto {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 20px;
+.header {
+    font-family: 'Georgia', serif;
 }
 
-table {
+.foto {
+    max-width: 200px;
+    height: auto;
+}
+
+.skills-table {
     width: 100%;
     border-collapse: collapse;
-    border: 1px solid black;
+    margin-top: 15px;
 }
 
-th, td {
+.skills-table th, .skills-table td {
     padding: 8px;
     text-align: left;
-    border: 1px solid black;
+    border: 1px solid #ddd;
 }
 
-th {
-    font-family: 'Times New Roman', serif;
-    background-color: #f2f2f2;
+.avanzado {
+    background-color: #e74c3c;
+    color: white;
 }
 
+.basico {
+    background-color: #9b59b6;
+    color: white;
+}
 
-#mensaje {
-    margin-top: 20px;
+.no-experiencia {
+    background-color: #f7d3e9;
+}
+
+.nativo {
+    background-color: #27ae60;
+    color: white;
+}
+
+.mensaje-container {
+    margin-top: 15px;
     padding: 10px;
     border: 1px solid #ddd;
+    min-height: 20px;
+}
+
+.resumen {
+    background-color: #fff;
+    padding: 10px;
+    transition: background-color 0.3s;
 }
