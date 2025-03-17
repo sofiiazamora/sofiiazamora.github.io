@@ -27,18 +27,6 @@ th {
     background-color: #f2f2f2;
 }
 
-.none {
-    background-color: #ffc0cb;
-}
-
-.basic {
-    background-color: #ff00ff;
-}
-
-.advanced {
-    background-color: #ff0000;
-}
-
 #mensaje {
     margin-top: 20px;
     padding: 10px;
