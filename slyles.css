@@ -4,6 +4,12 @@ body {
     margin: 20px;
 }
 
+head {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    margin: 20px;
+}
+
 .foto {
     max-width: 100%;
     height: auto;
