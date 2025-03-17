@@ -8,11 +8,14 @@ body {
     font-family: 'Georgia', serif;
 }
 
-head {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 16px;
-    margin: 20px;
+h1 {
+    font-family: 'Georgia', serif;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
 }
+
 
 .foto {
     max-width: 100%;
