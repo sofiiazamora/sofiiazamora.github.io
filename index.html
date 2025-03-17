@@ -2,15 +2,12 @@
  <html lang="es">
 
  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="slyles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
  <body>
      <img src=imagen\images.png  class="foto">
-     <h1 class="titulo-principal">Página Personal - Lab 1</h1>
+     <h1 class="titulo">Página Personal - Lab 1</h1>
 
      <div class="header">
         <p>Sofía Zamora</p>
@@ -19,65 +16,62 @@
         <p>GitHub: <a href="https://github.com/sofiiazamora">https://github.com/sofiiazamora</a></p>
     </div>
 
-     <h1 class="subtitulo">Resumen Personal</h1>
+     <h2 class="subtitulo">Resumen Personal</h2>
      <p>Estudiante de Ingeniería.</p>
  
      <h1 class="subtitulo">Habilidades</h1>
-     <table border="1">
+     <table>
          <tr>
              <th>Habilidad</th>
              <th>Nivel</th>
          </tr>
          <tr>
              <td>Python</td>
-             <td style="background-color: red;">Avanzado</td>
+             <td class="avanzado">Avanzado</td>
          </tr>
          <tr>
              <td>JavaScript</td>
-             <td style="background-color: fuchsia;">Básico</td>
+             <td class="basico">Básico</td>
          </tr>
          <tr>
              <td>HTML/CSS</td>
-             <td style="background-color: fuchsia;">Básico</td>
+             <td class="basico">Básico</td>
          </tr>
          <tr>
              <td>Git</td>
-             <td style="background-color: fuchsia;">Básico</td>
+             <td class="basico">Básico</td>
          </tr>
          <tr>
              <td>Excel</td>
-             <td style="background-color: fuchsia;">Básico</td>
+             <td class="basico">Básico</td>
          </tr>
          <tr>
              <td>SQL</td>
-             <td style="background-color: fuchsia;">Básico</td>
+             <td class="basico">Básico</td>
          </tr>
          <tr>
              <td>Ruby</td>
-             <td style="background-color: pink;">No</td>
+             <td class="no">No</td>
          </tr>
          <tr>
              <td>Inglés</td>
-             <td style="background-color: red;">Avanzado</td>
+             <td class="avanzado">Avanzado</td>
          </tr>
          <tr>
              <td>Español</td>
-             <td style="background-color: red;">Avanzado</td>
+             <td class="avanzado">Avanzado</td>
          </tr>
      </table>
  
-     <h1 class="subtitulo">Interactivo</h1>
+     <h2 class="subtitulo">Interactivo</h2>
      <input type="text" id="texto">
-     <button id="botonMensaje">Enviar</button>
+     <button id="boton">Enviar</button>
      <div id="mensaje">Mensaje</div>
      
      <script>
-         document.addEventListener('DOMContentLoaded', function() {
-             document.getElementById("botonMensaje").addEventListener("click", function() {
-                 var entrada = document.getElementById("texto").value;
-                 document.getElementById("mensaje").innerHTML = entrada;
-             });
-         });
-     </script>
+        document.getElementById("boton").addEventListener("click", () => {
+            document.getElementById("mensaje").innerText = document.getElementById("texto").value;
+        });
+    </script>
  </body>
  </html>

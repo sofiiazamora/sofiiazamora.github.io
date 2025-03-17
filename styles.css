@@ -5,13 +5,11 @@ body {
     margin: 20px;
 }
 
-.titulo-principal {
+.titulo {
     font-family: 'Lobster', cursive !important;
     font-size: 36px;
-    font-weight: bold;
     text-align: center;
     color: fuchsia;
-    margin-bottom: 20px;
 }
 
 .header {
@@ -22,19 +20,9 @@ body {
 
 
 .subtitulo {
-    font-family: 'Times New Roman', serif !important;
-    font-size: 24px;
-    font-weight: bold;
-    text-align: left;
+    font-family: 'Times New Roman', serif;
+    font-size: 22px;
     color: red;
-    margin-top: 20px;
-}
-
-
-.foto {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 20px;
 }
 
 table {
@@ -45,14 +33,16 @@ table {
 
 th, td {
     padding: 8px;
-    text-align: left;
     border: 1px solid black;
 }
 
 th {
-    font-family: 'Times New Roman', serif !important;
     background-color: #f2f2f2;
 }
+
+.avanzado { background-color: red; }
+.basico { background-color: fuchsia; }
+.ninguno { background-color: pink; }
 
 #mensaje {
     margin-top: 20px;
