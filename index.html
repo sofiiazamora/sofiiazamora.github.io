@@ -7,11 +7,22 @@
     <title>Lab 2 WT</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: #ffe6f2;
+        }
+
+        .section-title {
+            front-family: 'Lucida Handwriting', cursive;
+            font-size: 2.5rem;
+            color: #c2185b;
+        }
+    </style>
 </head>
 
  <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-pink bg-pink">
+        <div class="container-fluid">
             <a class="navbar-brand" href="#">Sofía Zamora Personal Page</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -19,173 +30,104 @@
 
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#news">Noticias</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#accordion">Más info</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#habilities">Habilities</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#news">News</a></li>
                 </ul>
             </div>
         </div>
     </nav>
     
-    <div class="container my-4">
-        <div class="row">
-            <div class="col-12 text-center">
-                <img src="imagen/images.png" class="foto img-fluid" alt="Imagen personal">
-                <h1 class="titulo">Personal Website - Sofía Zamora</h1>
-            </div>
-        </div>   
-    </div>
+    <div class="container-fluid py-4">
+        <div class="text-center mb-4">
+            <img src="imagen/images.png" class="img-fluid" alt="Image">
+            <h1 class="section-title">Personal Website - Sofía Zamora</h1>
+        </div>  
 
-        <div class="row my-4">
-            <div class="col-12">
-                <div class="header text-center">
-                    <p>Sofía Zamora</p>
-                    <p>Indutriial Civil Engeneering</p>
-                    <p>Year of Enrollment: 2022</p>
-                    <p>GitHub: <a href="https://github.com/sofiiazamora" target="_blank">https://github.com/sofiiazamora</a></p>
-                    <p>Personal Details: Engeneering Student. I like to paint and go on walks</p>
-                </div>
-            </div>
+        <div class="text-center mb-4">
+            <p>Sofía Zamora</p>
+            <p>Indutrial Civil Engineering</p>
+            <p>Year of Enrollment: 2022</p>
+            <p>GitHub: <a href="https://github.com/sofiiazamora" target="_blank">https://github.com/sofiiazamora</a></p>
+            <p>Personal Details: Engineering Student. I like to paint and go on walks</p>
         </div>
         
-        <div class="row my-4">
-            <div class="col-12">
-                <h2 class="subtitulo text-center">Habilities</h2>
-                <table class="table table-bordered">
-                    <thead>
-                        <tr class="table-light">
-                            <th>Hability</th>
-                            <th>Level</th>
-                        </tr>
-                    </thead>
+        <div class="mb-4">
+            <h2 class="section-title text-center" id="habilities">Habilities</h2>
+            <table class="table table-bordered">
+                <thead>
+                    <tr class="table-light">
+                        <th>Hability</th>
+                        <th>Level</th>
+                    </tr>
+                </thead>
 
-                    <tbody>
-                        <tr>
-                            <td>Python</td>
-                            <td class="bg-primary text-white">Advaced</td>
-                        </tr>
-                        <tr>
-                            <td>JavaScript</td>
-                            <td class="bg-warning text-dark">Basic</td>
-                        </tr>
-                        <tr>
-                            <td>HTML/CSS</td>
-                            <td class="bg-warning text-dark">Basic</td>
-                        </tr>
-                        <tr>
-                            <td>Git</td>
-                            <td class="bg-warning text-dark">Basic</td>
-                        </tr>
-                        <tr>
-                            <td>Excel</td>
-                            <td class="bg-warning text-dark">Basic</td>
-                        </tr>
-                        <tr>
-                            <td>SQL</td>
-                            <td class="bg-warning text-dark">Basic</td>
-                        </tr>
-                        <tr>
-                            <td>Ruby</td>
-                            <td class="bg-secondary text-white">None</td>
-                        </tr>
-                        <tr>
-                            <td>English</td>
-                            <td class="bg-warning text-white">Advanced</td>
-                        </tr>
-                        <tr>
-                            <td>Spanish</td>
-                            <td class="bg-warning text-white">Advanced</td>
-                        </tr>
-                    </tbody>
-                </table>    
-            </div>
-        </div>
-    </div>
-
+                <tbody>
+                    <tr><td>Python</td><td class="bg-primary text-white">Advaced</td></tr>
+                    <tr><td>JavaScript</td><td class="bg-warning text-dark">Basic</td></tr>
+                    <tr><td>HTML/CSS</td><td class="bg-warning text-dark">Basic</td></tr>
+                    <tr><td>Git</td><td class="bg-warning text-dark">Basic</td></tr>
+                    <tr><td>Excel</td><td class="bg-warning text-dark">Basic</td></tr>
+                    <tr><td>SQL</td><td class="bg-warning text-dark">Basic</td></tr>
+                    <tr><td>Ruby</td><td class="bg-secondary text-white">None</td></tr>
+                    <tr><td>English</td><td class="bg-warning text-white">Advanced</td></tr>
+                    <tr><td>Spanish</td><td class="bg-warning text-white">Advanced</td></tr>
+                </tbody>
+            </table>    
+        </div>        
  
-    <div class="row my-4">
-        <div class="col-12">
-            <h2 class="subtitulo text-center">Interactive Section</h2>
+        <div class="mb-4">
+            <h2 class="section-title text-center">Interactive Section</h2>
             <div class="input-group mb-3">
                 <input type="text" id="text" class="form-control" placeholder="Write a Message">
                 <button id="button" class="btn btn-primary">Upload Message</button>
             </div>
             <div id="message" class="alert alert-info">Message</div>
         </div>
+
+        <div class="mb-4" id="news">
+            <h2 class="section-title text-center">Technology News</h2>
+            <div id="news-container" class="row row-cols-1 row-cols-md-2 g-4"></div>
+        </div>
     </div>
-</div>
 
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
      <script>
         document.getElementById("button").addEventListener("click", () => {
             document.getElementById("message").innerText = document.getElementById("text").value;
         });
-    </script>
 
-<div class="row my-4" id="news">
-    <div class="col-12">
-      <h2 class="text-center">Noticias de Tecnología</h2>
-      <div id="news-container" class="row row-cols-1 row-cols-md-2 g-4">
-      </div>
-    </div>
-  </div>
-</div>
+        const apiKey = 'e0b1c863d8a049dabe87bf488164fb2a';
+        const category = 'technology';
+        const url = `https://newsapi.org/v2/top-headlines?category=${category}&pageSize=10&apiKey=${apiKey}`;
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-  document.getElementById("boton").addEventListener("click", () => {
-    document.getElementById("mensaje").innerText = document.getElementById("texto").value;
-  });
-
-  const apiKey = 'e0b1c863d8a049dabe87bf488164fb2a';
-  const category = 'technology';
-  const url = `https://newsapi.org/v2/top-headlines?category=${category}&pageSize=10&apiKey=${apiKey}`;
-
-  fetch(url)
-    .then(response => response.json())
-    .then(data => {
-      const articles = data.articles;
-      const container = document.getElementById('news-container');
-      articles.forEach(article => {
-        const col = document.createElement('div');
-        col.className = 'col';
-        const card = document.createElement('div');
-        card.className = 'card h-100';
-        
-        if (article.urlToImage) {
-          const img = document.createElement('img');
-          img.src = article.urlToImage;
-          img.className = 'card-img-top';
-          img.alt = article.title;
-          card.appendChild(img);
-        }
-        
-        const cardBody = document.createElement('div');
-        cardBody.className = 'card-body';
-        
-        const title = document.createElement('h5');
-        title.className = 'card-title';
-        title.innerText = article.title;
-        
-        const source = document.createElement('p');
-        source.className = 'card-text';
-        source.innerHTML = `<strong>Fuente:</strong> ${article.source.name}`;
-        
-        const description = document.createElement('p');
-        description.className = 'card-text';
-        description.innerText = article.description || '';
-        
-        cardBody.appendChild(title);
-        cardBody.appendChild(source);
-        cardBody.appendChild(description);
-        card.appendChild(cardBody);
-        col.appendChild(card);
-        container.appendChild(col);
-      });
-    })
-    .catch(error => {
-      console.error("Error al obtener noticias:", error);
-    });
-</script>
+        fetch(url)
+        .then(response => response.json())
+        .then(data => {
+            const container = document.getElementById('news-container');
+            data.articles.forEach(article => {
+            const col = document.createElement('div');
+            col.className = 'col';
+            const card = document.createElement('div');
+            card.className = 'card h-100';
+            if (article.urlToImage) {
+                const img = document.createElement('img');
+                img.src = article.urlToImage;
+                img.className = 'card-img-top';
+                img.alt = article.title;
+                card.appendChild(img);
+            }
+            const cardBody = document.createElement('div');
+            cardBody.className = 'card-body';
+            cardBody.innerHTML = `<h5 class="card-title">${article.title}</h5>
+                <p class="card-text"><strong>Fuente:</strong> ${article.source.name}</p>
+                <p class="card-text">${article.description || ''}</p>`;
+            card.appendChild(cardBody);
+            col.appendChild(card);
+            container.appendChild(col);
+            });
+        })
+        .catch(console.error);
+    </script>    
 </body>
 </html>
