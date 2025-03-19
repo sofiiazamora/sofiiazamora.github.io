@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lab 2 WT</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
     <style>
         body {
             background-color: #ffe6f2;
@@ -15,13 +14,13 @@
         .section-title {
             front-family: 'Lucida Handwriting', cursive;
             font-size: 2.5rem;
-            color: #c2185b;
+            color: #cb037e;
         }
     </style>
 </head>
 
  <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Sofía Zamora Personal Page</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -40,7 +39,7 @@
     
     <div class="container-fluid py-4">
         <div class="text-center mb-4">
-            <img src="imagen/images.png" class="img-fluid" alt="Image">
+            <img src="imagen/images.png" alt="Image">
             <h1 class="section-title">Personal Website - Sofía Zamora</h1>
         </div>  
 
@@ -52,28 +51,33 @@
             <p>Personal Details: Engineering Student. I like to paint and go on walks</p>
         </div>
         
+        
         <div class="mb-4">
             <h2 class="section-title text-center" id="habilities">Habilities</h2>
-            <table class="table table-bordered">
-                <thead>
-                    <tr class="table-light">
-                        <th>Hability</th>
-                        <th>Level</th>
-                    </tr>
-                </thead>
+            <div class="d-flex justify-content-center">
+                <div class="table-responsive w-75">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr class="table-light">
+                                <th>Hability</th>
+                                <th>Level</th>
+                            </tr>
+                        </thead>
 
-                <tbody>
-                    <tr><td>Python</td><td class="bg-primary text-white">Advaced</td></tr>
-                    <tr><td>JavaScript</td><td class="bg-warning text-dark">Basic</td></tr>
-                    <tr><td>HTML/CSS</td><td class="bg-warning text-dark">Basic</td></tr>
-                    <tr><td>Git</td><td class="bg-warning text-dark">Basic</td></tr>
-                    <tr><td>Excel</td><td class="bg-warning text-dark">Basic</td></tr>
-                    <tr><td>SQL</td><td class="bg-warning text-dark">Basic</td></tr>
-                    <tr><td>Ruby</td><td class="bg-secondary text-white">None</td></tr>
-                    <tr><td>English</td><td class="bg-warning text-white">Advanced</td></tr>
-                    <tr><td>Spanish</td><td class="bg-warning text-white">Advanced</td></tr>
-                </tbody>
-            </table>    
+                        <tbody>
+                            <tr><td>Python</td><td class="bg-danger text-white">Advaced</td></tr>
+                            <tr><td>JavaScript</td><td class="bg-danger-subtle">Basic</td></tr>
+                            <tr><td>HTML/CSS</td><td class="bg-danger-subtle">Basic</td></tr>
+                            <tr><td>Git</td><td class="bg-danger-subtle">Basic</td></tr>
+                            <tr><td>Excel</td><td class="bg-danger-subtle">Basic</td></tr>
+                            <tr><td>SQL</td><td class="bg-danger-subtle">Basic</td></tr>
+                            <tr><td>Ruby</td><td class=>None</td></tr>
+                            <tr><td>English</td><td class="bg-danger text-white">Advanced</td></tr>
+                            <tr><td>Spanish</td><td class="bg-danger text-white">Advanced</td></tr>
+                        </tbody>
+                    </table>  
+                </div>
+            </div>
         </div>        
  
         <div class="mb-4">
@@ -91,8 +95,9 @@
         </div>
     </div>
 
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-     <script>
+    <div id="news-container" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 g-2">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
         document.getElementById("button").addEventListener("click", () => {
             document.getElementById("message").innerText = document.getElementById("text").value;
         });
@@ -121,7 +126,7 @@
             const cardBody = document.createElement('div');
             cardBody.className = 'card-body';
             cardBody.innerHTML = `<h5 class="card-title">${article.title}</h5>
-                <p class="card-text"><strong>Fuente:</strong> ${article.source.name}</p>
+                <p class="card-text"><strong>Source </strong> ${article.source.name}</p>
                 <p class="card-text">${article.description || ''}</p>`;
             card.appendChild(cardBody);
             col.appendChild(card);
@@ -131,6 +136,7 @@
         .catch(error => {
             console.error("Error obtaining news");
         })
-    </script>    
+    </script> 
+    </div>   
 </body>
 </html>
