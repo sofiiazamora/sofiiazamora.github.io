@@ -21,7 +21,7 @@
 </head>
 
  <body>
-    <nav class="navbar navbar-expand-lg navbar-pink bg-pink">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Sofía Zamora Personal Page</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -104,8 +104,9 @@
         fetch(url)
         .then(response => response.json())
         .then(data => {
+            const articles = data.articles.slice(0, 10);
             const container = document.getElementById('news-container');
-            data.articles.forEach(article => {
+            articles.forEach(article => {
             const col = document.createElement('div');
             col.className = 'col';
             const card = document.createElement('div');
@@ -127,7 +128,9 @@
             container.appendChild(col);
             });
         })
-        .catch(console.error);
+        .catch(error => {
+            console.error("Error obtaining news");
+        })
     </script>    
 </body>
 </html>
